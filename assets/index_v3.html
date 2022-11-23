@@ -29,12 +29,12 @@
 </head>
 <body>
   <div class="box">
-    <input id="txtURL" type="text" value="www.google.com" autofocus>
+    <input id="txtURL" type="text" value="https://android.googlesource.com/platform/frameworks/base/" autofocus>
   </div>
   <div class="box">
     <button id="btnGo">Go</button>
   </div>
-  <div class="box">
+  <div class="box" hidden>
     <span>切换线路:</span>
     <select id="selNode"></select>
   </div>
@@ -114,17 +114,10 @@
     }
 
     const SITE_LIST = [
-      ['google', ''],
-      ['youtube', ''],
-      ['twitter', 'twitter.com/google'],
-      ['flickr', ''],
-      ['quora', 'www.quora.com/topic/JavaScript-programming-language'],
-      ['twitch', 'www.twitch.tv/'],
-      ['reddit', ''],
-      ['wiki', 'zh.wikipedia.org/'],
+      ['android', 'source.android.com/'],
+      ['source', 'android.googlesource.com/'],
+      ['bulletin', 'source.android.com/docs/security/bulletin'],
       ['gist', 'gist.github.com/'],
-      ['facebook', 'facebook.com/Google/'],
-      ['blogger', ''],
     ]
 
     function showIcons() {
